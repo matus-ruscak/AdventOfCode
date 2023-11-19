@@ -22,20 +22,19 @@ def aoc_day_4a(input_text_file):
         for i in range(start_index_elf_2, end_index_elf_2 + 1):
             elf_2_str_sequence.add(i)
 
-        for elf_1_item in elf_1_str_sequence:
-            if elf_1_item in elf_2_str_sequence:
-                total_overlap_count += 1
-                break
+        if (elf_1_str_sequence.issubset(elf_2_str_sequence)) or (elf_2_str_sequence.issubset(elf_1_str_sequence)):
 
-    print(total_overlap_count)
+            total_overlap_count += 1
+
+    print('total_overlap_count: ', total_overlap_count)
     return total_overlap_count
 
 
 if __name__ == '__main__':
-    #parsed_test_file = parse_text_file_by_line("input/aoc_day_4_test_input.txt")
-    #assert 2 == aoc_day_4a(parsed_test_file)
+    parsed_test_file = parse_text_file_by_line("../input/aoc_day_4_test_input.txt")
+    assert 2 == aoc_day_4a(parsed_test_file)
 
-    parsed_test_file = parse_text_file_by_line("input/aoc_day_4_actual_input.txt")
+    parsed_test_file = parse_text_file_by_line("../input/aoc_day_4_actual_input.txt")
     aoc_day_4a(parsed_test_file)
 
 

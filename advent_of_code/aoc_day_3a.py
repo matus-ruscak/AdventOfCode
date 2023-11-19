@@ -33,10 +33,10 @@ def aoc_day_3a(input_text_file):
 
 
 if __name__ == '__main__':
-    parsed_test_file = parse_text_file_by_line("input/aoc_day_3_test_input.txt")
+    parsed_test_file = parse_text_file_by_line("../input/aoc_day_3_test_input.txt")
     assert 157 == aoc_day_3a(parsed_test_file)
 
-    parsed_test_file = parse_text_file_by_line("input/aoc_day_3_actual_input.txt")
+    parsed_test_file = parse_text_file_by_line("../input/aoc_day_3_actual_input.txt")
     total_duplicate_sum = aoc_day_3a(parsed_test_file)
     print(total_duplicate_sum)
 
