@@ -7,6 +7,12 @@ def parse_text_file_by_line(file_path):
         return lines
 
 
+def parse_text_file_by_line_no_strip(file_path):
+    with open(file_path) as f:
+        lines = f.read().splitlines()
+        return lines
+
+
 def split_generator(sequence, sep):
     chunk = []
     for val in sequence:
