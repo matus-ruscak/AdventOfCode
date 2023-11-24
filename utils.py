@@ -13,6 +13,20 @@ def parse_text_file_by_line_no_strip(file_path):
         return lines
 
 
+def split_input_text_into_2_parts(input_text_file):
+    part_1 = []
+    part_2 = []
+    after_delimiter = False
+    for i in input_text_file:
+        if i == '':
+            after_delimiter = True
+        elif after_delimiter:
+            part_1.append(i)
+        else:
+            part_2.append(i)
+    return part_1, part_2
+
+
 def split_generator(sequence, sep):
     chunk = []
     for val in sequence:

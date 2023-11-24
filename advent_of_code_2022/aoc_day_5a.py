@@ -1,18 +1,9 @@
-from utils import parse_text_file_by_line_no_strip
-import numpy as np
+from utils import parse_text_file_by_line_no_strip, split_input_text_into_2_parts
 
 
 def aoc_day_5a(input_text_file):
-    containers = []
-    instructions = []
-    after_delimiter = False
-    for i in input_text_file:
-        if i == '':
-            after_delimiter = True
-        elif after_delimiter:
-            instructions.append(i)
-        else:
-            containers.append(i)
+
+    instructions, containers = split_input_text_into_2_parts(input_text_file)
 
     container_labels = containers[len(containers)-1].replace(' ', '')
     number_of_containers = int(container_labels[len(container_labels)-1])
