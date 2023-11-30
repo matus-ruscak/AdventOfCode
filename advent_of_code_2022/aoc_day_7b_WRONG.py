@@ -104,7 +104,7 @@ if __name__ == '__main__':
     # assert find_smallest_dictionary_to_free_up_space(folder_size_dictionary, total_file_size) == 24933642
 
 
-    parsed_test_file = parse_text_file_by_line("../input/aoc_day_7_actual_input_commands.txt")
+    parsed_test_file = parse_text_file_by_line("input/aoc_day_7_actual_input_commands.txt")
     folder_structure = aoc_day_7a_parse_commands_into_table(parsed_test_file)
     folder_size_dictionary = aoc_day_7a_calculate_file_size_per_dictionary(folder_structure)
     total_file_size = calculate_total_file_size(folder_structure)

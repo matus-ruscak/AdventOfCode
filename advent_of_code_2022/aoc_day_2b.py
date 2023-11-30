@@ -54,13 +54,13 @@ def aoc_day_2b(tuple_list_of_games):
 
 
 if __name__ == '__main__':
-    parsed_test_file = parse_text_file_by_line("../input/aoc_day_2_test_input.txt")
+    parsed_test_file = parse_text_file_by_line("input/aoc_day_2_test_input.txt")
     list_of_test_tuples = [(i.rsplit(' ')[0], i.rsplit(' ')[1]) for i in parsed_test_file]
     result_test_score = aoc_day_2b(list_of_test_tuples)
 
     assert result_test_score == 12
 
-    parsed_actual_file = parse_text_file_by_line("../input/aoc_day_2_actual_input.txt")
+    parsed_actual_file = parse_text_file_by_line("input/aoc_day_2_actual_input.txt")
     list_of_actual_tuples = [(i.rsplit(' ')[0], i.rsplit(' ')[1]) for i in parsed_actual_file]
     result_actual_score = aoc_day_2b(list_of_actual_tuples)
     print(result_actual_score)

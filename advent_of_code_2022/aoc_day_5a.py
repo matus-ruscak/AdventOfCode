@@ -67,10 +67,10 @@ def aoc_day_5a(input_text_file):
 
 if __name__ == '__main__':
 
-    parsed_test_file = parse_text_file_by_line_no_strip("../input/aoc_day_5_test_input.txt")
+    parsed_test_file = parse_text_file_by_line_no_strip("input/aoc_day_5_test_input.txt")
     assert aoc_day_5a(parsed_test_file) == 'CMZ'
 
-    parsed_test_file = parse_text_file_by_line_no_strip("../input/aoc_day_5_actual_input.txt")
+    parsed_test_file = parse_text_file_by_line_no_strip("input/aoc_day_5_actual_input.txt")
     actual_result = aoc_day_5a(parsed_test_file)
 
 

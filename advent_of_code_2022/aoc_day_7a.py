@@ -65,11 +65,11 @@ def aoc_day_7a_parse_commands_into_table(input_text_file):
 
 if __name__ == '__main__':
 
-    parsed_test_file = parse_text_file_by_line("../input/aoc_day_7_test_input_commands.txt")
+    parsed_test_file = parse_text_file_by_line("input/aoc_day_7_test_input_commands.txt")
     folder_structure = aoc_day_7a_parse_commands_into_table(parsed_test_file)
 
     assert aoc_day_7a_calculate_file_size(folder_structure) == 95437
 
-    parsed_test_file = parse_text_file_by_line("../input/aoc_day_7_actual_input_commands.txt")
+    parsed_test_file = parse_text_file_by_line("input/aoc_day_7_actual_input_commands.txt")
     folder_structure = aoc_day_7a_parse_commands_into_table(parsed_test_file)
     print('result size: ', aoc_day_7a_calculate_file_size(folder_structure))

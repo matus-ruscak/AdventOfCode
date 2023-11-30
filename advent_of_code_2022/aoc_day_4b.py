@@ -35,7 +35,7 @@ if __name__ == '__main__':
     #parsed_test_file = parse_text_file_by_line("input/aoc_day_4_test_input.txt")
     #assert 2 == aoc_day_4a(parsed_test_file)
 
-    parsed_test_file = parse_text_file_by_line("../input/aoc_day_4_actual_input.txt")
+    parsed_test_file = parse_text_file_by_line("input/aoc_day_4_actual_input.txt")
     aoc_day_4a(parsed_test_file)
 
 

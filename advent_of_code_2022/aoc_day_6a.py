@@ -20,10 +20,10 @@ def aoc_day_6a(input_text_file):
 
 if __name__ == '__main__':
 
-    parsed_test_file = parse_text_file_by_line("../input/aoc_day_6_test_input.txt")
+    parsed_test_file = parse_text_file_by_line("input/aoc_day_6_test_input.txt")
     assert aoc_day_6a(parsed_test_file) == 7
 
-    parsed_test_file = parse_text_file_by_line("../input/aoc_day_6_actual_input.txt")
+    parsed_test_file = parse_text_file_by_line("input/aoc_day_6_actual_input.txt")
     print('Result: ', aoc_day_6a(parsed_test_file))
 
 
