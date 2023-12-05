@@ -1,10 +1,3 @@
-my_list = [[], [], []]
-print(my_list)
+line = '......*.....968*.....$............*........=..348...*..........986....*...................459....*........422................#......%482....'
 
-my_list[0].append('A')
-my_list[0].append('B')
-my_list[0].append('C')
-print(my_list)
-
-my_list[0].pop(0)
-print(my_list)
+print(line[30:35])
